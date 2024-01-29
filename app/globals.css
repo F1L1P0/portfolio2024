@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
-.welcome-text {
+.Welcome-text {
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.4),
@@ -18,7 +20,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.welcome-box {
+.Welcome-box {
   isolation: isolate;
   overflow: hidden;
   align-items: center;
@@ -61,6 +63,8 @@
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+
 
 html {
   scroll-behavior: smooth;
