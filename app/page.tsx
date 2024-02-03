@@ -1,6 +1,7 @@
 import Skills from '@/components/main/Skills'
 import Hero from '../components/main/Hero'
 import Api from '@/components/main/Api'
+import Projects from '@/components/main/Projects'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Api />
+        <Projects />
       </div>
     </main>
   )

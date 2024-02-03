@@ -9,7 +9,7 @@ import { SparklesIcon } from '@heroicons/react/24/solid'
 const Api = () => {
   return (
     <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
-      <div className="absolute w-auto h-auto top-0 z-[5]">
+      <div className="absolute w-auto h-auto top-0 z-[10]">
         <motion.div
           initial="hidden"
           animate="visible"
