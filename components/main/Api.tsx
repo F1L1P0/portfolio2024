@@ -14,7 +14,7 @@ const Api = () => {
           initial="hidden"
           animate="visible"
           variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200">
+          className="text-5xl lmd:text-6xl font-medium text-center text-gray-200">
           <span>Performance</span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {' '}
@@ -30,23 +30,23 @@ const Api = () => {
           alt="left arrow"
           width={120}
           height={120}
-          className="basis-[30%]"
+          className="basis-[30%] hidden md:flex"
         />
         <Image
           src="/api.png"
           alt="api"
           width={120}
           height={120}
-          className="basis-[30%]"
+          className="basis-full md:basis-[30%] max-h-16 max-w-16 sm:max-h-24 sm:max-w-24"
         />
         <Image
           src="/rarr.png"
           alt="right arrow"
           width={120}
           height={120}
-          className="basis-[30%]"
+          className="basis-[30%] hidden md:flex"
         />
-        <div className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]">
+        <div className="Welcome-box Welcome-box__api px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]">
           <p className="Welcome-text text-[20px] basis-full">API</p>
         </div>
       </div>

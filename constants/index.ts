@@ -42,20 +42,8 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: 'Framer Motion',
-    Image: '/framer.png',
-    width: 90,
-    height: 80,
-  },
-  {
     skill_name: 'Redux',
     Image: '/redux.png',
-    width: 90,
-    height: 80,
-  },
-  {
-    skill_name: 'Material UI',
-    Image: '/mui.png',
     width: 90,
     height: 80,
   },
@@ -91,20 +79,21 @@ export const Skill_data = [
     height: 80,
   },
   {
+    skill_name: 'My SQL',
+    Image: '/mysql.png',
+    width: 90,
+    height: 80,
+  },
+  {
     skill_name: 'Node js',
     Image: '/node-js.png',
     width: 90,
     height: 80,
   },
+
   {
     skill_name: 'Mongo db',
     Image: '/mongodb.png',
-    width: 90,
-    height: 80,
-  },
-  {
-    skill_name: 'My SQL',
-    Image: '/mysql.png',
     width: 90,
     height: 80,
   },
@@ -163,12 +152,6 @@ export const Frontend_skill = [
   {
     skill_name: 'SASS',
     Image: '/sass.png',
-    width: 90,
-    height: 80,
-  },
-  {
-    skill_name: 'Framer Motion',
-    Image: '/framer.png',
     width: 90,
     height: 80,
   },

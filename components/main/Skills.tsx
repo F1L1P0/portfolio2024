@@ -15,7 +15,7 @@ const Skills = () => {
       style={{ transform: 'scale(0.9' }}>
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center xl:max-w-[1000px]">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -26,36 +26,36 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className=" flex-row justify-around flex-wrap mt-4 gap-5 items-center xl:max-w-[1000px] hidden md:flex">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
+            src={image?.Image || '/NavLogo.png'}
+            width={image?.width || 90}
+            height={image?.height || 80}
             index={index}
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className=" flex-row justify-around flex-wrap mt-4 gap-5 items-center xl:max-w-[1000px] hidden md:flex">
         {Other_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
+            src={image?.Image || '/NavLogo.png'}
+            width={image?.width || 90}
+            height={image?.height || 80}
             index={index}
           />
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className=" flex-row justify-around flex-wrap mt-4 gap-5 items-center xl:max-w-[1000px] hidden md:flex">
         {Backend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
+            src={image?.Image || '/NavLogo.png'}
+            width={image?.width || 90}
+            height={image?.height || 80}
             index={index}
           />
         ))}

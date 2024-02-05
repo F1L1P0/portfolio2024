@@ -1,14 +1,12 @@
-import { Socials } from '@/constants'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center">
+        <a href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/NavLogo.png"
             alt="logo"
@@ -17,7 +15,7 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin rounded-full p-2"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="font-bold ml-[10px] hidden lg:block text-gray-300">
             Filip Drábek
           </span>
         </a>
@@ -37,18 +35,17 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
+          <Link href="https://github.com/F1L1P0" passHref target="_blank">
             <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
+              src="linkedin.svg"
+              width={36}
+              height={36}
+              alt="redirect to my linkedin"
             />
-          ))}
+          </Link>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
