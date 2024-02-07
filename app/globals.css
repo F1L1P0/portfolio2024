@@ -3,10 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.blackhole_nav{
+  @apply rotate-180 absolute h-full w-full left-0 z-[1] object-scale-down;
+  top: calc(-40%  - (30px));
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
