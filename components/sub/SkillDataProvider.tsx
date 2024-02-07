@@ -22,7 +22,7 @@ function SkillDataProvider({ src, width, height, index }: Props) {
     visible: { opacity: 1 },
   }
 
-  const animationDelay = 0.1
+  const animationDelay = 0.075
   return (
     <motion.div
       className="mt-4"
